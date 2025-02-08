@@ -4,7 +4,7 @@ body {
     background-color: #f4f4f4;
     margin: 5px;
     padding: 20px;
-    border: 5px solid rgb(164, 235, 245);
+    border: 1px solid red;
     border-radius: 5px;
 }
 
@@ -18,10 +18,16 @@ body {
 }
 
 #colorBox {
-    width: 8em;
-    height: 4em;
+    width: 10em;
+    height: 5em;
     margin: 20px auto;
     border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
 }
 
 .options-container {
@@ -32,8 +38,8 @@ body {
 }
 
 .color-option {
-    width: 14em;
-    height: 8em;
+    width: 10em;
+    height: 5em;
     border: 2px solid #ddd;
     cursor: pointer;
     border-radius: 5px;
@@ -42,8 +48,8 @@ body {
 }
 
 .color-option:hover {
-    transform: scale(1.1);
-    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #newGameButton {
