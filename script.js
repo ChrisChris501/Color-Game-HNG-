@@ -7,7 +7,7 @@ const newGameButton = document.getElementById('newGameButton');
 let targetColor = '';
 let score = 0;
 
-// Function to generate a random RGB color
+// Generate a random RGB color
 function generateRandomColor() {
 	const r = Math.floor(Math.random() * 256);
 	const g = Math.floor(Math.random() * 256);
@@ -30,7 +30,7 @@ function startRound() {
 	colorBox.style.fontSize = '2rem';
 	colorBox.style.fontWeight = 'bold';
 
-	// An array of colors
+	// Array of colors
 	let colors = [targetColor];
 	while (colors.length < 6) {
 		let newColor = generateRandomColor();
@@ -47,7 +47,7 @@ function startRound() {
 	});
 }
 
-// Function to check user's guess
+// Check user's guess
 function checkGuess(selectedColor) {
 	if (selectedColor === targetColor) {
 		gameStatus.textContent = 'Correct! +100 points';
@@ -67,7 +67,7 @@ function checkGuess(selectedColor) {
 	setTimeout(startRound, 1000);
 }
 
-// Function to restart the game
+// Restart the game
 function startGame() {
 	score = 0;
 	scoreDisplay.textContent = score;
